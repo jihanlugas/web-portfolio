@@ -25,7 +25,7 @@ const Index = () => {
           <Link
             href={'/pdf/cpns-bin.pdf'}
             className='mx-2 md:mx-4 p-2 md:p-4 text-gray-400 hover:text-gray-100 duration-300 flex justify-center w-full border mb-4'
-            title={'Github'}
+            title={'Badan Intelegen Negara'}
             target={'_blank'}
           >
             <div className=''>
@@ -35,27 +35,17 @@ const Index = () => {
           <Link
             href={'/pdf/cpns-brin.pdf'}
             className='mx-2 md:mx-4 p-2 md:p-4 text-gray-400 hover:text-gray-100 duration-300 flex justify-center w-full border mb-4'
-            title={'Github'}
+            title={'Badan Riset dan Inovasi Nasional'}
             target={'_blank'}
           >
             <div className=''>
               Badan Riset dan Inovasi Nasional
             </div>
           </Link>
-          {/* <Link
-            href={'/pdf/cpns-bin.pdf'}
-            className='mx-2 md:mx-4 p-2 md:p-4 text-gray-400 hover:text-gray-100 duration-300 flex justify-center w-full border mb-4'
-            title={'Github'}
-            target={'_blank'}
-          >
-            <div className=''>
-              Kejaksaan Agung
-            </div>
-          </Link> */}
           <Link
             href={'/pdf/cpns-kemendagri.pdf'}
             className='mx-2 md:mx-4 p-2 md:p-4 text-gray-400 hover:text-gray-100 duration-300 flex justify-center w-full border mb-4'
-            title={'Github'}
+            title={'Kementerian Dalam Negeri'}
             target={'_blank'}
           >
             <div className=''>
@@ -65,7 +55,7 @@ const Index = () => {
           <Link
             href={'/pdf/cpns-kementrian-edsm.pdf'}
             className='mx-2 md:mx-4 p-2 md:p-4 text-gray-400 hover:text-gray-100 duration-300 flex justify-center w-full border mb-4'
-            title={'Github'}
+            title={'Kementerian Energi dan Sumber Daya Mineral'}
             target={'_blank'}
           >
             <div className=''>
@@ -75,7 +65,7 @@ const Index = () => {
           <Link
             href={'/pdf/cpns-kemenkumham.pdf'}
             className='mx-2 md:mx-4 p-2 md:p-4 text-gray-400 hover:text-gray-100 duration-300 flex justify-center w-full border mb-4'
-            title={'Github'}
+            title={'Kementerian Hukum dan Hak Asasi Manusia'}
             target={'_blank'}
           >
             <div className=''>
@@ -85,7 +75,7 @@ const Index = () => {
           <Link
             href={'/pdf/cpns-kemenperin.pdf'}
             className='mx-2 md:mx-4 p-2 md:p-4 text-gray-400 hover:text-gray-100 duration-300 flex justify-center w-full border mb-4'
-            title={'Github'}
+            title={'Kementerian Perindustrian'}
             target={'_blank'}
           >
             <div className=''>
@@ -95,7 +85,7 @@ const Index = () => {
           <Link
             href={'/pdf/cpns-ma.pdf'}
             className='mx-2 md:mx-4 p-2 md:p-4 text-gray-400 hover:text-gray-100 duration-300 flex justify-center w-full border mb-4'
-            title={'Github'}
+            title={'Mahkamah Agung RI'}
             target={'_blank'}
           >
             <div className=''>
@@ -105,7 +95,7 @@ const Index = () => {
           <Link
             href={'/pdf/cpns-ppatk.pdf'}
             className='mx-2 md:mx-4 p-2 md:p-4 text-gray-400 hover:text-gray-100 duration-300 flex justify-center w-full border mb-4'
-            title={'Github'}
+            title={'Pusat Pelaporan dan Analisis Transaksi Keuangan'}
             target={'_blank'}
           >
             <div className=''>
@@ -115,7 +105,7 @@ const Index = () => {
           <Link
             href={'/pdf/cpns-sekretariat-dpr-ri.pdf'}
             className='mx-2 md:mx-4 p-2 md:p-4 text-gray-400 hover:text-gray-100 duration-300 flex justify-center w-full border mb-4'
-            title={'Github'}
+            title={'Sekretariat Jenderal DPR RI'}
             target={'_blank'}
           >
             <div className=''>
@@ -125,7 +115,7 @@ const Index = () => {
           <Link
             href={'/pdf/cpns-kpk.pdf'}
             className='mx-2 md:mx-4 p-2 md:p-4 text-gray-400 hover:text-gray-100 duration-300 flex justify-center w-full border mb-4'
-            title={'Github'}
+            title={'Setjen Komisi Pemberantasan Korupsi'}
             target={'_blank'}
           >
             <div className=''>
