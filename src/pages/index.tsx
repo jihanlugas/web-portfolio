@@ -1,9 +1,12 @@
-import { Inter } from 'next/font/google'
+import { Ubuntu } from 'next/font/google'
 import Head from 'next/head';
 import Link from 'next/link';
 import { FaFacebookF, FaInstagram, FaStackOverflow, FaTelegram, FaGithub, FaUserSecret, FaLinkedinIn } from "react-icons/fa6";
 
-const inter = Inter({ subsets: ['latin'] })
+const ubuntu = Ubuntu({
+  subsets: ['latin'],
+  weight: '400',
+})
 
 const Index = () => {
   return (
@@ -17,14 +20,14 @@ const Index = () => {
         <div id="stars3"></div>
       </section>
 
-      <div className='h-screen flex justify-center items-center'>
+      <div className={'h-screen flex justify-center items-center ' + ubuntu.className}>
         <div className='max-w-3xl p-4 text-gray-200'>
           <div className='flex justify-center'>
             {/* <div className='w-40 h-40 flex justify-center items-center border mb-8'>
               <div>Image</div>
             </div> */}
             <div className='flex justify-center items-center mb-8 md:mb-12'>
-              <FaUserSecret className={'text-7xl md:text-9xl'} size={''} />
+              <FaUserSecret className={'text-7xl md:text-8xl'} size={''} />
             </div>
           </div>
           <div className='text-xl md:text-4xl text-center'>
@@ -79,6 +82,15 @@ const Index = () => {
               <FaTelegram className={'text-2xl md:text-4xl'} size={''} />
             </Link> */}
           </div>
+        </div>
+        <div className='absolute bottom-0'>
+          <Link
+            href={'/cpns'}
+            className='mx-2 md:mx-4 p-2 md:p-4 text-gray-50 hover:text-gray-100 duration-300'
+            title={'Linkedin'}
+          >
+            <div>INFO CPNS</div>
+          </Link>
         </div>
       </div>
     </div>
