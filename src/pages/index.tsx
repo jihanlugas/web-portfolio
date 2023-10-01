@@ -83,15 +83,6 @@ const Index = () => {
             </Link> */}
           </div>
         </div>
-        <div className='absolute bottom-0'>
-          <Link
-            href={'/cpns'}
-            className='mx-2 md:mx-4 p-2 md:p-4 text-gray-50 hover:text-gray-100 duration-300'
-            title={'Linkedin'}
-          >
-            <div>INFO CPNS</div>
-          </Link>
-        </div>
       </div>
     </div>
   )
