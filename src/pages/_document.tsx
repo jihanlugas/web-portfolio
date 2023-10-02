@@ -8,7 +8,7 @@ export default function Document() {
         <meta name="description" content={'Web portfolio Jihan Lugas'} />
         <meta name="keywords" content="jihan lugas, jihan, programmer, portfolio, personal website, personal portfolio" />
         <meta name="author" content="Jihan Lugas" />
-        <meta property="og:image" itemProp="image" content="/favicon-192x192.png" />
+        <meta property="og:image" itemProp="image" content="https://jihanlugas.id/favicon-192x192.png" />
         {/* <meta property="og:site_name" content="San Roque 2014 Pollos" /> */}
         {/* <meta property="og:title" content="San Roque 2014 Pollos" /> */}
         {/* <meta property="og:description" content="Programa de fiestas" /> */}
