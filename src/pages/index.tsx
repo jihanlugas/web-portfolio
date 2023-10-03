@@ -13,7 +13,6 @@ const Index = () => {
     <div>
       <Head>
         <title>{'Jihan Lugas'}</title>
-
       </Head>
       <section className="absolute">
         <div id="stars1"></div>

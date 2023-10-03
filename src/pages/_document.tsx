@@ -5,7 +5,7 @@ export default function Document() {
     <Html lang="en">
       <Head>
         <meta name="google-site-verification" content="k3tJdfiBldsZfpiY7RMzcbVcvH9IMILJFw037MgxaT4" />
-        <meta name="description" content={'Web portfolio Jihan Lugas'} />
+        <meta name="description" content={'Hey, Jihan Lugas here. The man who looking for jannah. If you want to know more about me, feel free to click on any button below'} />
         <meta name="keywords" content="jihan lugas, jihan, programmer, portfolio, personal website, personal portfolio" />
         <meta name="author" content="Jihan Lugas" />
         <meta property="og:image" itemProp="image" content="https://jihanlugas.id/favicon-192x192.png" />
