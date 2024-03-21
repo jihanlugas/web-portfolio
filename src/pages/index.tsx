@@ -1,10 +1,11 @@
 import { Ubuntu } from 'next/font/google'
 import Head from 'next/head';
 import Link from 'next/link';
+import Image from 'next/image';
 import { FaFacebookF, FaInstagram, FaStackOverflow, FaTelegram, FaGithub, FaUserSecret, FaLinkedinIn } from "react-icons/fa6";
 
 const ubuntu = Ubuntu({
-  subsets: ['latin'],
+  subsets: ['latin-ext'],
   weight: '400',
 })
 
@@ -20,14 +21,21 @@ const Index = () => {
         <div id="stars3"></div>
       </section>
 
-      <div className={'h-screen flex justify-center items-center ' + ubuntu.className}>
+      <div className={`h-screen flex justify-center items-center ${ubuntu.className}`}>
         <div className='max-w-3xl p-4 text-gray-200'>
           <div className='flex justify-center'>
             {/* <div className='w-40 h-40 flex justify-center items-center border mb-8'>
               <div>Image</div>
             </div> */}
             <div className='flex justify-center items-center mb-8 md:mb-12'>
-              <FaUserSecret className={'text-7xl md:text-8xl'} size={''} />
+              <Image
+                className=""
+                src="/face-scan-square-svgrepo-com.svg"
+                alt="Face logo"
+                width={72}
+                height={72}
+                priority
+              />
             </div>
           </div>
           <div className='text-xl md:text-4xl text-center'>
