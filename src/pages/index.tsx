@@ -3,6 +3,12 @@ import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
 import { FaFacebookF, FaInstagram, FaStackOverflow, FaTelegram, FaGithub, FaUserSecret, FaLinkedinIn } from "react-icons/fa6";
+import Particles from 'react-particles';
+
+import type { Container, Engine } from "tsparticles-engine";
+//import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
+import { loadSlim } from "tsparticles-slim";
+import { useCallback } from 'react';
 
 const ubuntu = Ubuntu({
   subsets: ['latin-ext'],
@@ -10,16 +16,100 @@ const ubuntu = Ubuntu({
 })
 
 const Index = () => {
+
+  const particlesInit = useCallback(async (engine: Engine) => {
+
+    // you can initialize the tsParticles instance (engine) here, adding custom shapes or presets
+    // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
+    // starting from v2 you can add only the features you need reducing the bundle size
+    //await loadFull(engine);
+    await loadSlim(engine);
+  }, []);
+
+  const particlesLoaded = useCallback(async (container: Container | undefined) => {
+  }, []);
+
   return (
     <div>
       <Head>
         <title>{'Jihan Lugas'}</title>
       </Head>
-      <section className="absolute">
+      {/* <section className="absolute">
         <div id="stars1"></div>
         <div id="stars2"></div>
         <div id="stars3"></div>
-      </section>
+      </section> */}
+      <Particles
+        id="tsparticles"
+        init={particlesInit}
+        loaded={particlesLoaded}
+        options={{
+          
+          fpsLimit: 120,
+          interactivity: {
+            events: {
+              onClick: {
+                enable: true,
+                mode: "push",
+              },
+              onHover: {
+                enable: true,
+                mode: "repulse",
+              },
+              resize: true,
+            },
+            modes: {
+              push: {
+                quantity: 1,
+
+              },
+              repulse: {
+                distance: 150,
+                duration: 5,
+              },
+            },
+          },
+          particles: {
+            color: {
+              value: "#ffffff",
+            },
+            links: {
+              color: "#ffffff",
+              distance: 150,
+              enable: true,
+              opacity: 0.5,
+              width: 1,
+            },
+            move: {
+              direction: "none",
+              enable: true,
+              outModes: {
+                default: "bounce",
+              },
+              random: false,
+              speed: 1,
+              straight: false,
+            },
+            number: {
+              density: {
+                enable: true,
+                area: 800,
+              },
+              value: 80,
+            },
+            opacity: {
+              value: 0.5,
+            },
+            shape: {
+              type: "circle",
+            },
+            size: {
+              value: { min: 1, max: 5 },
+            },
+          },
+          detectRetina: true,
+        }}
+      />
 
       <div className={`h-screen flex justify-center items-center ${ubuntu.className}`}>
         <div className='max-w-3xl p-4 text-gray-200'>
@@ -41,11 +131,11 @@ const Index = () => {
           <div className='text-xl md:text-4xl text-center'>
             {"Hey, Jihan Lugas here"}
           </div>
-          {/* <div className='text-base md:text-2xl mb-4 text-center'>
-            {"I'm a backend developer"}
-          </div> */}
+          <div className='text-base md:text-2xl mb-4 text-center'>
+            {"He/Him"}
+          </div>
           <div className='text-base md:text-xl mb-4 text-center'>
-            {"The man who looking for jannah"}
+            {"Software Engineer has an experienced full-stack development specializing in Golang and Next.js"}
           </div>
           <div className='text-base md:text-xl text-center mb-8'>
             {"If you want to know more about me, feel free to click on any button below"}
