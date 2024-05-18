@@ -104,8 +104,22 @@ const Index = () => {
               type: "circle",
             },
             size: {
-              value: { min: 1, max: 5 },
+              value: 1,
+              random: true,
+              anim: {
+                enable: false,
+                speed: 80,
+                size_min: 0.1,
+                sync: false
+              }
             },
+            // lineLinked: {
+            //   enable: true,
+            //   distance: 500,
+            //   color: '#ffffff',
+            //   opacity: 0.4,
+            //   width: 1
+            // },
           },
           detectRetina: true,
         }}
@@ -113,11 +127,11 @@ const Index = () => {
 
       <div className={`h-screen flex justify-center items-center ${ubuntu.className}`}>
         <div className='max-w-3xl p-4 text-gray-200'>
-          <div className='flex justify-center'>
+          <div className='flex justify-center select-none'>
             {/* <div className='w-40 h-40 flex justify-center items-center border mb-8'>
               <div>Image</div>
             </div> */}
-            <div className='flex justify-center items-center mb-8 md:mb-12'>
+            <div className='flex justify-center items-center mb-8 md:mb-12 select-none'>
               <Image
                 className=""
                 src="/face-scan-square-svgrepo-com.svg"
@@ -128,16 +142,16 @@ const Index = () => {
               />
             </div>
           </div>
-          <div className='text-xl md:text-4xl text-center'>
+          <div className='text-xl md:text-4xl text-center select-none'>
             {"Hey, Jihan Lugas here"}
           </div>
-          <div className='text-base md:text-2xl mb-4 text-center'>
+          <div className='text-base md:text-2xl mb-4 text-center select-none'>
             {"He/Him"}
           </div>
-          <div className='text-base md:text-xl mb-4 text-center'>
+          <div className='text-base md:text-xl mb-4 text-center select-none'>
             {"Software Engineer has an experienced full-stack development specializing in Golang and Next.js"}
           </div>
-          <div className='text-base md:text-xl text-center mb-8'>
+          <div className='text-base md:text-xl text-center select-none mb-8'>
             {"If you want to know more about me, feel free to click on any button below"}
           </div>
           <div className='flex justify-center'>
