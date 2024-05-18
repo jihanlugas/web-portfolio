@@ -38,16 +38,19 @@ const Index = () => {
               />
             </div>
           </div>
-          <div className='text-xl md:text-4xl mb-4 text-center'>
+          <div className='text-xl md:text-4xl text-center'>
             {"Hey, Jihan Lugas here"}
           </div>
-          <div className='text-base md:text-xl mb-4 text-center italic'>
-            {"Happy Eid Mubarak"}
+          {/* <div className='text-base md:text-2xl mb-4 text-center'>
+            {"I'm a backend developer"}
+          </div> */}
+          <div className='text-base md:text-xl mb-4 text-center'>
+            {"The man who looking for jannah"}
           </div>
-          <div className='text-base md:text-xl text-center mb-8 italic'>
-            {"May Allah's blessings be with you today, tomorow and always, Eid Mubarak!"}
+          <div className='text-base md:text-xl text-center mb-8'>
+            {"If you want to know more about me, feel free to click on any button below"}
           </div>
-          <div className='flex justify-center hidden'>
+          <div className='flex justify-center'>
             <Link
               href={'http://github.com/jihanlugas'}
               className='mx-2 md:mx-4 p-2 md:p-4 text-gray-400 hover:text-gray-100 duration-300'
